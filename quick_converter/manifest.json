@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Quick Converter",
+    "version": "1.0.0",
+    "description": "Converts x currency to y currency",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon.png",
+            "48": "images/icon.png",
+            "128": "images/icon.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+    
+}
